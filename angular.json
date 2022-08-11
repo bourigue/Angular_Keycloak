@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/keycloak-js/dist/keycloak.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -96,7 +99,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+
+            ]
           }
         }
       }

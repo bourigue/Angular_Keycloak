@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { KeycloakService } from 'keycloak-angular';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Keycloak';
+ kc:any;
+constructor(private keycloakservices:KeycloakService){
+this.kc=keycloakservices;
+}
+OnInit(){
+  this.onLogin();
+}
+onLogout(){
+  this.keycloakservices.logout();
+}
+
+onLogin(){
+  console.log(this.keycloakservices.getUsername());
+  this.keycloakservices.isTokenExpired();
+}
+
+
+
+
+
+
+
+
+
+
+
 }

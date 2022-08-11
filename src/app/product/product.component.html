@@ -1,1 +1,30 @@
-<p>product works!</p>
+<p>post-list works!</p>
+<div class="card">
+  <div class="card-header">
+    Produit
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+      <td>id</td>
+      <td>name</td>
+      <td>price</td>
+    
+    
+      </thead>
+      <tbody>
+      <tr *ngFor="let postmm of products">
+          <td>{{postmm.id}}</td>
+          <td>{{postmm.name}}</td>
+          <td>{{postmm.price}}</td>
+        <td> 
+          <button  class = "btn btn-danger m-1" > Delete</button>   
+          <button  class = "btn btn-success m-1" > Update</button>   
+       </td> 
+        
+        </tr>
+
+        </tbody>
+    </table>
+  </div>
+</div>
