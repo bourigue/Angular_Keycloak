@@ -13,12 +13,14 @@ constructor(private keycloakservices:KeycloakService){
 this.kc=keycloakservices;
 }
 OnInit(){
-  this.onLogin();
 }
 onLogout(){
   this.keycloakservices.logout();
 }
 
+onLogou(){
+  console.log("my tOKEN"+this.keycloakservices.getKeycloakInstance().idToken);
+}
 
 
 
