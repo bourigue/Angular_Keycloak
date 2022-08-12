@@ -19,10 +19,7 @@ onLogout(){
   this.keycloakservices.logout();
 }
 
-onLogin(){
-  console.log(this.keycloakservices.getUsername());
-  this.keycloakservices.isTokenExpired();
-}
+
 
 
 
